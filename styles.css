@@ -1,0 +1,137 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* General body styling */
+body {
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.header img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 56% 48%;
+    border: 4px solid #3498db;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: border 0.3 ease;
+}
+
+.header img:hover {
+    transform: scale(1.1);
+    border: 8px solid #3498db;
+}
+
+/* Bio section */
+.bio_body {
+    max-width: 850px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.bio p {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Course List */
+.courseList h3 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    color: #2c3e50;
+    border-left: 5px solid #3498db;
+    padding-left: 10px;
+}
+
+.courseList ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.courseList li {
+    background: #ecf6fc;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.courseList li:hover {
+    transform: translateX(5px);
+    background: #d6ebfa;
+}
+
+/* Link */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #fff;
+    background: #3498db;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+a:hover {
+    background: #217dbb;
+    box-shadow: 6px 6px 5px rgba(0,0,0,0.3);
+}
+
+/* Calculator Section */
+.calc_body {
+    max-width: 100%;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.calc_body table {
+    border-spacing: 8px;
+}
+
+.calc_body th {
+    font-size: 1.4rem;
+    text-align: left;
+    margin-bottom: 12px;
+    color: #2c3e50;
+    border-left: 5px solid #9534db;
+    padding: 10px 10px;
+    background: #d4b2ef;
+    border-radius: 8px 8px 0 0;
+}
+
+.calc_body td {
+    padding: 5px 10px;
+    background: #f3ecfc;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
