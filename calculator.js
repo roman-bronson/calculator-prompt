@@ -41,10 +41,13 @@ while (true) {
         else if (op === "-") results = Number(x) - Number(y);
         else if (op === "/") {
             if (Number(y) === 0) results = "can't divide by 0";
-            else results = parseFloat(Number(x) % Number(y)).toFixed(2);
+            else {
+                results = Number(x) % Number(y);
+                results = parseFloat(results).toFixed(2);
+            }
         }
         else if (op === "*") results = Number(x) * Number(y);
-        else results = parseFloat(Number(x) % Number(y)).toFixed(2);
+        else results = Number(x) % Number(y)
     }
 
     console.log(results)
